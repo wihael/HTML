@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  background-color: firebrick;
+  border: 2px solid pink;
+  border-radius: 100%;
+  font-size: 2rem;
+  line-height: 145px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  position: relative;
+}
+
+div:first-of-type {
+  animation: animacija1 4s ease;
+}
+
+@keyframes animacija1 {
+  0% {
+    left: 0;
+  }
+  75% {
+    left: 1000px;
+  }
+  100% {
+    left: 0;
+    background-color: yellow;
+  }
+}
+
+div:nth-of-type(2) {
+  animation: animacija2 4s ease-in 2s;
+}
+
+@keyframes animacija2 {
+  0% {
+    left: 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    left: 1000px;
+    transform: rotate(360deg);
+  }
+  100% {
+    left: 0;
+    transform: rotate(0%);
+    background-color: yellow;
+  }
+}
+
+/* animation-iteration-count : broj puta izvršavanja, možete napisati broj ponavljanja ili infinite ako želite beskonačni loop izvršavanja */
+
+div:nth-of-type(3) {
+  animation: animacija3 4s ease-in-out 1s 2;
+}
+
+@keyframes animacija3 {
+  0% {
+    left: 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    left: 1000px;
+    transform: rotate(360deg);
+  }
+  100% {
+    left: 0;
+    transform: rotate(0%);
+    background-color: yellow;
+  }
+}
+
+/* animation direction : normal | reverse | alternate | alternate-reverse */
+
+div:nth-of-type(4) {
+  animation: animacija4 2s ease 3 alternate-reverse;
+}
+
+@keyframes animacija4 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 80%;
+  }
+}
+
+/* animation fill mode : none | forwards | backwards | both */
+
+div:nth-of-type(5) {
+  animation: animacija5 2s ease 1s both;
+}
+
+@keyframes animacija5 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 80%;
+    background: red;
+  }
+}

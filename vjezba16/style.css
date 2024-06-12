@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  background-color: firebrick;
+  border: 1px solid pink;
+  width: 300px;
+  height: 120px;
+  margin: 2rem auto;
+}
+
+/* Transformacije */
+
+/* Translate - pomakni element u nekom smjeru u odnosu na originalnu poziciju */
+
+.translate {
+  transform: translate(-300px, -50px);
+  /* transform: translateX(300px); */
+}
+
+/* Rotate - zavrti element u nekom smjeru za određen broj stupnjeva */
+
+.rotate {
+  transform: rotate(30deg);
+}
+
+/* Scale - skaliraj element prema veličini po x i/ili y koordinati */
+
+.scale {
+  transform: scale(50%, 30%);
+  /* transform: scaleX(50%); */
+}
+
+/* Skew - "nakošivanje" elementa */
+
+.skew {
+  transform: skew(3deg, 3deg);
+}
+
+.multiple {
+  transform: translateX(300px) rotate(90deg) scale(1.5, 2);
+}

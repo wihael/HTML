@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forma</title>
+  </head>
+  <body>
+    <form
+      action=""
+      method="post"
+      enctype="text/plain"
+      autocomplete="on"
+      name="Obrazac"
+    >
+      <p>
+        <label for="ime">Ime</label>
+        <input
+          type="text"
+          name="ime"
+          placeholder="Ime"
+          maxlength="25"
+          required
+        />
+      </p>
+      <p>
+        <label for="tel">Telefonski broj</label>
+        <input type="tel" name="tel" placeholder="Telefonski broj" />
+      </p>
+      <p>
+        <label for="lozinka">Lozinka</label>
+        <input type="password" name="lozinka" placeholder="Lozinka" />
+      </p>
+      <p>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" placeholder="E-mail" />
+      </p>
+      <p>
+        <label for="boja">Boja</label>
+        <input type="color" name="boja" />
+      </p>
+      <p>
+        <label for="obavijest">Želite li imati naše obavijesti?</label><br />
+        <input type="checkbox" name="obavijest" />
+      </p>
+      <p>
+        Ocijenite našu uslugu: <br />
+        <label for="odabir">1</label>
+        <input type="radio" name="odabir" value="1" />
+        <label for="odabir">2</label>
+        <input type="radio" name="odabir" value="2" />
+        <label for="odabir">3</label>
+        <input type="radio" name="odabir" value="3" />
+        <label for="odabir">4</label>
+        <input type="radio" name="odabir" value="4" />
+        <label for="odabir">5</label>
+        <input type="radio" name="odabir" value="5" />
+      </p>
+      <p>
+        <label for="dokument">Priložite dokument</label>
+        <input type="file" name="dokument" />
+      </p>
+      <p>
+        <label for="komentar">Upišite Vaš komentar</label>
+        <textarea
+          name="komentar"
+          cols="20"
+          rows="4"
+          placeholder="Upišite Vaš tekst"
+        ></textarea>
+      </p>
+      <p>
+        <label for="grad">Odaberite grad</label>
+        <select name="grad">
+          <option value="0" disabled selected>Odaberite...</option>
+          <option value="Zagreb">Zagreb</option>
+          <option value="Rijeka">Rijeka</option>
+          <option value="Split">Split</option>
+          <option value="Osijek">Osijek</option>
+        </select>
+      </p>
+      <p>
+        <label for="auto">Odaberite auto:</label>
+        <input type="text" name="auto" list="auti" />
+        <datalist id="auti">
+          <option value="BMW">BMW</option>
+          <option value="Mercedes">Mercedes</option>
+          <option value="Audi">Audi</option>
+          <option value="Volvo">Volvo</option>
+        </datalist>
+      </p>
+      <p>
+        <input
+          type="range"
+          name="slider"
+          min="0"
+          max="100"
+          value="50"
+          step="5"
+        />
+        <label for="slider">Slider</label>
+      </p>
+      <p>
+        <input type="reset" value="Resetirajte obrazac" name="reset-btn" />
+      </p>
+      <p>
+        <input type="submit" value="Pošalji obrazac" name="submit-btn" />
+      </p>
+    </form>
+  </body>
+</html>

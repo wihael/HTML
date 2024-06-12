@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  background-color: #eee;
+  padding: 5rem;
+}
+
+header div,
+header img {
+  flex-basis: 20%;
+}
+
+header div {
+  order: 1;
+}
+
+h1 {
+  color: red;
+}
+
+p {
+  color: saddlebrown;
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+main p {
+  flex-basis: 100%;
+  padding: 2rem;
+  border: 1px solid black;
+  background-color: lemonchiffon;
+}

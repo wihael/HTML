@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "reset";
+@import "colors";
+@import "./abstracts/mixins";
+
+body {
+  background: url(../slike/blur-clean.jpg);
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+
+  &__sivi {
+    background-color: $siva;
+    @include container-style;
+    animation: slide-down 1.5s linear backwards;
+  }
+
+  &__crveni {
+    background-color: $crvena;
+    @include container-style;
+    animation: slide-down 1.5s linear 1.5s backwards;
+  }
+
+  &__narancasti {
+    background-color: $narancasta;
+    @include container-style;
+    animation: slide-down 1.5s linear 3s backwards;
+  }
+
+  @keyframes slide-down {
+    0% {
+      margin-bottom: 140vh;
+    }
+
+    100% {
+      margin-bottom: 0;
+    }
+  }
+}

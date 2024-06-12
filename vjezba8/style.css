@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+div {
+  /* background-color: #eee;
+  background-image: url(./butterfly.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: contain; */
+  background: #eee url(./butterfly.png) center center/contain no-repeat fixed;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  color: antiquewhite;
+  font-size: 1.6rem;
+  text-shadow: 1px 1px 1px #000;
+}

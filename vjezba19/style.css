@@ -1,0 +1,38 @@
+body {
+  font-size: 1.6rem;
+}
+
+/* Selektor atributa koji selektira sve elemente koji imaju navedeni atribut */
+/* [title] {
+  color: red;
+} */
+
+/* Selektor atributa koji selektira točno određeni atribut sa točno određenom vrijednosti */
+/* [title="prvi odlomak"] {
+  color: brown;
+} */
+
+/* Selektor atributa koji traži navedenu vrijednost bilo gdje u vrijednosti atributa */
+/* [title*="odlomak"] {
+  color: blue;
+} */
+
+/* Selektor atributa koji cilja vrijednost atributa odvojenu razmakom */
+/* [title~="odlomak"] {
+  color: blueviolet;
+} */
+
+/* Selektor atributa koji traži točno identičnu vrijednost na početku vrijednosti atributa */
+/* [title^="odlomak"] {
+  color: red;
+} */
+
+/* Selektor atributa koji uz traženi navedeni izraz u vrijednosti traži znak "-" */
+/* [title|="odlomak"] {
+  color: red;
+} */
+
+/* Selektor koji traženu vrijednost atributa nalazi na kraju vrijednosti atributa */
+[title$="odlomak"] {
+  color: red;
+}

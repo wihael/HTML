@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+div {
+  background-color: red;
+  height: 60px;
+}
+
+.manji {
+  width: 25%;
+}
+
+.veci {
+  width: calc(75% + 43px);
+}

@@ -1,0 +1,44 @@
+* {
+  font-size: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Ovdje pišete komentar */
+
+h1,
+h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header_klasa {
+  color: red;
+}
+
+p {
+  color: green;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: red;
+}
+
+p:first-of-type {
+  color: coral;
+}
+
+p:nth-child(2) {
+  color: blueviolet;
+}
+
+p:last-child {
+  color: red;
+}
